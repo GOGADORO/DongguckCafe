@@ -7,4 +7,6 @@
     <color name="textColor">#3f3f3f</color>
     <color name="grayColor">#c2c2c2</color>
     <color name="orangeColor">#ff7d11</color>
+    <color name="lightgreenColor">#9dd26a</color>
+    <color name="whiteColor">#fff</color>
 </resources>
