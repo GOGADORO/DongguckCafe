@@ -1,5 +1,6 @@
 package com.example.dgucafeapp;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.pm.SigningInfo;
@@ -22,6 +23,9 @@ public class CustomerSignIn extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_customer_sign_in);
+        //타이틀바 숨기기
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
 
         OwnerButton = findViewById(R.id.OwnerButton);
         OwnerButton.setOnClickListener(new View.OnClickListener(){
@@ -42,13 +46,23 @@ public class CustomerSignIn extends AppCompatActivity {
             }
         });
 
+
         SignInButton = findViewById(R.id.SignInButton);
         SignInButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
+                getCustomerID();
                 Intent intent = new Intent(CustomerSignIn.this, navigation.class);
                 startActivity(intent); //현재는 로그인 확인 절차 없이 바로 이동
             }
         });
+
+
+    }
+
+    public void getCustomerID(){
+        //editText에서 아이디 받아와서 데이터베이스에 저장 및 데이터 넘겨주기
+        CustomerId = findViewById(R.id.CustomerIdText);
+        String customerId = CustomerId.toString();
     }
 }

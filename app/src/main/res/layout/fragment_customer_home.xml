@@ -5,10 +5,43 @@
     android:layout_height="match_parent"
     tools:context=".CustomerHome">
 
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/CustomerId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:textSize="22dp"
+                android:text="010-25882-7129" />
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="님" />
+        </LinearLayout>
+
+        <view
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:backgroundTint="@color/defaultColor"/>
 
         <LinearLayout
             android:id="@+id/StampView"
@@ -17,8 +50,7 @@
             android:orientation="vertical"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="15dp"
             android:background="@drawable/border_shadow">
 
             <LinearLayout
@@ -35,7 +67,7 @@
                     android:layout_weight="1"
                     android:layout_marginLeft="20dp"
                     android:textSize="25dp"
-                    android:textFontWeight="700"
+                    android:textColor="@color/orangeColor"
                     android:text="스탬프" />
 
                 <TextView
@@ -53,7 +85,7 @@
             <TableLayout
                 android:id="@+id/StampTable"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginRight="30dp"
                 android:layout_marginLeft="30dp"
@@ -203,7 +235,6 @@
    팝업이 뜨며 '추가적립'버튼을 누를 경우, 스탬프\n
    15개 적립 후 '카페라떼'쿠폰이 자동 발행됩니다."/>
                 </TableRow>
-
             </TableLayout>
         </LinearLayout>
 
@@ -215,7 +246,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="20dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="15dp"
             android:background="@drawable/border_shadow">
 
             <LinearLayout
@@ -232,7 +263,7 @@
                     android:layout_weight="1"
                     android:layout_marginLeft="20dp"
                     android:textSize="25dp"
-                    android:textFontWeight="700"
+                    android:textColor="@color/orangeColor"
                     android:text="쿠폰" />
 
             </LinearLayout>
@@ -302,4 +333,5 @@
             </TableLayout>
         </LinearLayout>
     </LinearLayout>
+    </ScrollView>
 </FrameLayout>

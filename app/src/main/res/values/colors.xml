@@ -4,9 +4,10 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="defaultColor">#e5e5e5</color>
+    <color name="lightGrayColor">#f1f1f1</color>
     <color name="textColor">#3f3f3f</color>
     <color name="grayColor">#c2c2c2</color>
-    <color name="orangeColor">#ff7d11</color>
-    <color name="lightgreenColor">#9dd26a</color>
+    <color name="orangeColor">#F18107</color>
+    <color name="lightgreenColor">#86BC24</color>
     <color name="whiteColor">#fff</color>
 </resources>

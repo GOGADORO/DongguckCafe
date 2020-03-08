@@ -5,153 +5,168 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".OwnerSignUp">
-    <LinearLayout
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="match_parent">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="55dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
-        android:background="@drawable/border_layout">
-
-        <TextView
-            android:id="@+id/Cafe"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="카페"
-            android:textSize="20dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp" />
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-        <Spinner
-            android:id="@+id/CafeSpinner"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:ems="10"
-            android:background="@drawable/textview_border_layout"
-            android:padding="10dp"
-            android:prompt="해당 카페 이름을 선택하세요" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/border_layout">
 
-        <TextView
-            android:id="@+id/OwnerId"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="전화번호(id)"
-            android:textSize="20dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp" />
+                <TextView
+                    android:id="@+id/SignIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="점주 회원가입"
+                    android:textSize="25dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp" />
 
-        <EditText
-            android:id="@+id/OwnerIdText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="20dp"
-            android:background="@drawable/textview_border_layout"
-            android:ems="10"
-            android:hint="핸드폰 번호를 입력해주세요"
-            android:padding="10dp"
-            android:inputType="phone" />
+                <TextView
+                    android:id="@+id/Cafe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="카페"
+                    android:textSize="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp" />
 
-        <TextView
-            android:id="@+id/OwnerPW1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="비밀번호 1"
-            android:textSize="20dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp" />
+                <Spinner
+                    android:id="@+id/CafeSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:ems="10"
+                    android:background="@drawable/textview_border_layout"
+                    android:padding="10dp" />
 
-        <EditText
-            android:id="@+id/PW1Text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="20dp"
-            android:background="@drawable/textview_border_layout"
-            android:ems="10"
-            android:hint="비밀번호1를 입력해주세요"
-            android:padding="10dp"
-            android:inputType="textPassword"/>
+                <TextView
+                    android:id="@+id/OwnerId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="전화번호(id)"
+                    android:textSize="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp" />
 
-        <EditText
-            android:id="@+id/PW1CheckText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="20dp"
-            android:background="@drawable/textview_border_layout"
-            android:ems="10"
-            android:hint="비밀번호1 확인"
-            android:padding="10dp"
-            android:inputType="textPassword"/>
+                <EditText
+                    android:id="@+id/OwnerIdText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/textview_border_layout"
+                    android:ems="10"
+                    android:hint="핸드폰 번호를 입력해주세요"
+                    android:padding="10dp"
+                    android:inputType="phone" />
 
-        c
+                <TextView
+                    android:id="@+id/OwnerPW1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="비밀번호"
+                    android:textSize="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp" />
 
-        <EditText
-            android:id="@+id/PW2Text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="20dp"
-            android:background="@drawable/textview_border_layout"
-            android:ems="10"
-            android:hint="비밀번호2를 입력해주세요"
-            android:padding="10dp"
-            android:inputType="textPassword"/>
+                <EditText
+                    android:id="@+id/PW1Text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/textview_border_layout"
+                    android:ems="10"
+                    android:hint="비밀번호1를 입력해주세요"
+                    android:padding="10dp"
+                    android:inputType="textPassword"/>
 
-        <EditText
-            android:id="@+id/PW2CheckText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginBottom="40dp"
-            android:background="@drawable/textview_border_layout"
-            android:ems="10"
-            android:hint="비밀번호2 확인"
-            android:padding="10dp"
-            android:inputType="textPassword"/>
+                <EditText
+                    android:id="@+id/PW1CheckText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/textview_border_layout"
+                    android:ems="10"
+                    android:hint="비밀번호1 확인"
+                    android:padding="10dp"
+                    android:inputType="textPassword"/>
 
-    </LinearLayout>
+                c
 
-    <LinearLayout
-        android:id="@+id/SignLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_margin="20dp"
-        >
+                <EditText
+                    android:id="@+id/PW2Text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/textview_border_layout"
+                    android:ems="10"
+                    android:hint="비밀번호2를 입력해주세요"
+                    android:padding="10dp"
+                    android:inputType="textPassword"/>
 
-        <Button
-            android:id="@+id/SignUpButton"
-            android:layout_width="wrap_content"
-            android:layout_height="70dp"
-            android:layout_weight="1"
-            android:text="회원가입" />
-    </LinearLayout>
+                <EditText
+                    android:id="@+id/PW2CheckText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="40dp"
+                    android:background="@drawable/textview_border_layout"
+                    android:ems="10"
+                    android:hint="비밀번호2 확인"
+                    android:padding="10dp"
+                    android:inputType="textPassword"/>
 
-    </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/SignLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="20dp"
+                >
+
+                <Button
+                    android:id="@+id/SignUpButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:text="회원가입" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
