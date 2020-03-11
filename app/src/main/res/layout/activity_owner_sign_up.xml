@@ -14,7 +14,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="15dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
@@ -58,8 +58,7 @@
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
                     android:ems="10"
-                    android:background="@drawable/textview_border_layout"
-                    android:padding="10dp" />
+                    android:background="@drawable/textview_border_layout"/>
 
                 <TextView
                     android:id="@+id/OwnerId"
@@ -83,6 +82,15 @@
                     android:hint="핸드폰 번호를 입력해주세요"
                     android:padding="10dp"
                     android:inputType="phone" />
+
+                <TextView
+                    android:id="@+id/IdErrorText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:text="TextView" />
 
                 <TextView
                     android:id="@+id/OwnerPW1"
@@ -120,7 +128,15 @@
                     android:padding="10dp"
                     android:inputType="textPassword"/>
 
-                c
+
+                <TextView
+                    android:id="@+id/Pwd1ErrorText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:text="TextView" />
 
                 <EditText
                     android:id="@+id/PW2Text"
@@ -142,12 +158,21 @@
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="20dp"
-                    android:layout_marginBottom="40dp"
                     android:background="@drawable/textview_border_layout"
                     android:ems="10"
                     android:hint="비밀번호2 확인"
                     android:padding="10dp"
                     android:inputType="textPassword"/>
+
+                <TextView
+                    android:id="@+id/Pwd2ErrorText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="30dp"
+                    android:text="TextView" />
 
             </LinearLayout>
 

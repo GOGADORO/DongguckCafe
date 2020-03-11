@@ -22,7 +22,6 @@
             android:layout_height="140dp"
             android:src="@drawable/coop"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
             android:paddingLeft="25dp"
             android:paddingRight="25dp"
             android:paddingTop="35dp"/>
@@ -91,12 +90,22 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="20dp"
-                android:layout_marginBottom="90dp"
                 android:background="@drawable/textview_border_layout"
                 android:ems="10"
                 android:hint="본인 핸드폰 번호를 입력해주세요"
                 android:inputType="phone"
                 android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/LoginErrorText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="80dp"
+                android:textColor="@color/colorAccent"
+                android:text="test1\ntest2"/>
         </LinearLayout>
 
         <LinearLayout

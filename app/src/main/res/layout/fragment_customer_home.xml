@@ -64,11 +64,20 @@
                     android:id="@+id/Stamp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_marginLeft="20dp"
+                    android:layout_marginLeft="25dp"
                     android:textSize="25dp"
+                    android:textStyle="bold"
                     android:textColor="@color/orangeColor"
                     android:text="스탬프" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/orangeColor"
+                    android:text="Stamp" />
 
                 <TextView
                     android:id="@+id/StampNum"
@@ -101,36 +110,36 @@
                 android:layout_gravity="center">
 
                 <ImageView
-                    android:src="@drawable/coop"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:background="@drawable/stamp_rounding"/>
+                    android:background="@drawable/stamp_rounding"
+                    android:backgroundTint="@color/lightGrayColor"/>
                 <ImageView
-                    android:src="@drawable/coop"
                     android:layout_width="50dp"
                     android:layout_height="match_parent"
                     android:layout_marginRight="10dp"
-                    android:background="@drawable/stamp_rounding"/>
+                    android:background="@drawable/stamp_rounding"
+                    android:backgroundTint="@color/lightGrayColor"/>
                 <ImageView
-                    android:src="@drawable/coop"
                     android:layout_width="50dp"
                     android:layout_height="match_parent"
                     android:layout_marginRight="10dp"
-                    android:background="@drawable/stamp_rounding"/>
+                    android:background="@drawable/stamp_rounding"
+                    android:backgroundTint="@color/lightGrayColor"/>
                 <ImageView
-                    android:src="@drawable/coop"
                     android:layout_width="50dp"
                     android:layout_height="match_parent"
                     android:layout_marginRight="10dp"
-                    android:background="@drawable/stamp_rounding"/>
+                    android:background="@drawable/stamp_rounding"
+                    android:backgroundTint="@color/lightGrayColor"/>
                 <ImageView
-                    android:src="@drawable/coop"
                     android:layout_width="50dp"
                     android:layout_height="match_parent"
                     android:layout_marginRight="10dp"
-                    android:background="@drawable/stamp_rounding"/>
+                    android:background="@drawable/stamp_rounding"
+                    android:backgroundTint="@color/lightGrayColor"/>
             </TableRow>
 
                 <TableRow
@@ -141,36 +150,36 @@
                     android:layout_gravity="center">
 
                     <ImageView
-                        android:src="@drawable/coop"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
-                        android:background="@drawable/stamp_rounding"/>
+                        android:background="@drawable/stamp_rounding"
+                        android:backgroundTint="@color/lightGrayColor"/>
                     <ImageView
-                        android:src="@drawable/coop"
                         android:layout_width="50dp"
                         android:layout_height="match_parent"
                         android:layout_marginRight="10dp"
-                        android:background="@drawable/stamp_rounding"/>
+                        android:background="@drawable/stamp_rounding"
+                        android:backgroundTint="@color/lightGrayColor"/>
                     <ImageView
-                        android:src="@drawable/coop"
                         android:layout_width="50dp"
                         android:layout_height="match_parent"
                         android:layout_marginRight="10dp"
-                        android:background="@drawable/stamp_rounding"/>
+                        android:background="@drawable/stamp_rounding"
+                        android:backgroundTint="@color/lightGrayColor"/>
                     <ImageView
-                        android:src="@drawable/coop"
                         android:layout_width="50dp"
                         android:layout_height="match_parent"
                         android:layout_marginRight="10dp"
-                        android:background="@drawable/stamp_rounding"/>
+                        android:background="@drawable/stamp_rounding"
+                        android:backgroundTint="@color/lightGrayColor"/>
                     <ImageView
-                        android:src="@drawable/coop"
                         android:layout_width="50dp"
                         android:layout_height="match_parent"
                         android:layout_marginRight="10dp"
-                        android:background="@drawable/stamp_rounding"/>
+                        android:background="@drawable/stamp_rounding"
+                        android:backgroundTint="@color/lightGrayColor"/>
                 </TableRow>
 
                 <TableRow
@@ -185,27 +194,32 @@
                         android:layout_height="50dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
-                        android:background="@drawable/stamp_rounding"/>
+                        android:background="@drawable/stamp_rounding"
+                        android:backgroundTint="@color/lightGrayColor"/>
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="match_parent"
                         android:layout_marginRight="10dp"
-                        android:background="@drawable/stamp_rounding"/>
+                        android:background="@drawable/stamp_rounding"
+                        android:backgroundTint="@color/lightGrayColor"/>
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="match_parent"
                         android:layout_marginRight="10dp"
-                        android:background="@drawable/stamp_rounding"/>
+                        android:background="@drawable/stamp_rounding"
+                        android:backgroundTint="@color/lightGrayColor"/>
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="match_parent"
                         android:layout_marginRight="10dp"
-                        android:background="@drawable/stamp_rounding"/>
+                        android:background="@drawable/stamp_rounding"
+                        android:backgroundTint="@color/lightGrayColor"/>
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="match_parent"
                         android:layout_marginRight="10dp"
-                        android:background="@drawable/stamp_rounding"/>
+                        android:background="@drawable/stamp_rounding"
+                        android:backgroundTint="@color/lightGrayColor"/>
                 </TableRow>
 
             </TableLayout>
@@ -216,24 +230,37 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="35dp"
                 android:layout_marginLeft="35dp"
-                android:layout_marginBottom="15dp"
-                android:stretchColumns="0">
+                android:layout_marginBottom="15dp">
 
                 <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:paddingBottom="5dp">
+
                     <TextView
-                        android:text=" * 태블릿에서 전화번호 입력 시 구매한 음료 수량과\n   동일한 수의 스탬프가 적립됩니다."/>
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" * "/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="태블릿에서 전화번호 입력 시 구매한 수량과 동일한 수의 스탬프가 적립됩니다."/>
+
                 </TableRow>
                 <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:paddingBottom="10dp">
+
                     <TextView
-                        android:text=" * 스탬프 10개 적립 시 '아메리카노'쿠폰 발행 여부\n
-   팝업이 뜨며 '추가적립'버튼을 누를 경우, 스탬프\n
-   15개 적립 후 '카페라떼'쿠폰이 자동 발행됩니다."/>
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" * "/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="스탬프 10개 적립 시 '아메리카노'쿠폰 발행 여부 팝업이 뜨며 '추가적립' 버튼을 누를 경우, 스탬프15개 적립 후 '카페라떼' 쿠폰이 자동 발행됩니다."/>
                 </TableRow>
             </TableLayout>
         </LinearLayout>
@@ -257,14 +284,25 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/Coupon"
+                android:id="@+id/Coupon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginLeft="25dp"
+                android:textSize="25dp"
+                android:textColor="@color/orangeColor"
+                android:text="쿠폰" />
+
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:layout_marginLeft="20dp"
-                    android:textSize="25dp"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="15dp"
                     android:textColor="@color/orangeColor"
-                    android:text="쿠폰" />
+                    android:text="Coupon" />
+
+
 
             </LinearLayout>
 
@@ -272,45 +310,63 @@
                 android:id="@+id/CouponTable"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="30dp"
-                android:layout_marginLeft="30dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
                 android:layout_marginTop="15dp"
-                android:layout_marginBottom="15dp"
-                android:stretchColumns="0,1,2,3,4">
+                android:layout_marginBottom="15dp">
 
                 <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
                     android:layout_gravity="center">
 
-                    <ImageButton
-                        android:layout_width="50dp"
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:layout_weight="1"
+                       android:textSize="20dp"
+                       android:text="아메리카노"/>
+
+                    <TextView
+                        android:id="@+id/Americano"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
-                        android:background="@drawable/coupon_border"/>
-                    <ImageButton
-                        android:layout_width="50dp"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:text="0"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginRight="10dp"
-                        android:background="@drawable/coupon_border"/>
-                    <ImageButton
-                        android:layout_width="50dp"
+                        android:layout_weight="1"
+                        android:textSize="20dp"
+                        android:text="카페라떼"/>
+
+                    <TextView
+                        android:id="@+id/Cafelatte"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginRight="10dp"
-                        android:background="@drawable/coupon_border"/>
-                    <ImageButton
-                        android:layout_width="50dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginRight="10dp"
-                        android:background="@drawable/coupon_border"/>
-                    <ImageButton
-                        android:layout_width="50dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginRight="10dp"
-                        android:background="@drawable/coupon_border"/>
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:text="0"/>
                 </TableRow>
             </TableLayout>
 
@@ -327,8 +383,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:paddingBottom="10dp">
+
                 <TextView
-                    android:text=" * 사용할 쿠폰 클릭 후 나타나는 팝업의 번호를 직원\n   에게 알려 주시면 쿠폰이 사용됩니다."/>
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" * "/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="사용할 쿠폰을 직원에게 알려 주시면 쿠폰 사용 후 자동으로 쿠폰 개수가 차감됩니다.."/>
             </TableRow>
             </TableLayout>
         </LinearLayout>

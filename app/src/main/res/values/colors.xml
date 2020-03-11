@@ -10,4 +10,8 @@
     <color name="orangeColor">#F18107</color>
     <color name="lightgreenColor">#86BC24</color>
     <color name="whiteColor">#fff</color>
+    <color name="AmericanoColor">#613705</color>
+    <color name="lightAmericanoColor">#bda088</color>
+    <color name="LatteColor">#b38f68</color>
+    <color name="lightLatteColor">#dbc6af</color>
 </resources>

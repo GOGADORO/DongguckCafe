@@ -20,4 +20,6 @@ public class CustomerMenu extends Fragment {
         viewGroup = (ViewGroup) inflater.inflate(R.layout.fragment_customer_menu,container,false);
         return viewGroup;
     }
+
+
 }
