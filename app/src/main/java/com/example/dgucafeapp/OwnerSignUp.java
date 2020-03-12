@@ -1,5 +1,6 @@
 package com.example.dgucafeapp;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.EditText;
@@ -21,7 +22,11 @@ public class OwnerSignUp extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_owner_sign_up);
+        //타이틀바 숨기기
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
 
+        //스피너
         setSpinnerView();
 
     }

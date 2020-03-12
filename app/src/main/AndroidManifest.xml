@@ -9,26 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".OwnerSignIn"></activity>
-        <activity android:name=".CustomerSignIn" />
-        <activity android:name=".navigation">
+        <activity android:name=".OwnerSignIn" />
+        <activity android:name=".CustomerSignIn">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".OwnerSignUp">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
-        <activity android:name=".AccumulateStamp" />
-        <activity android:name=".UseCoupon" />
-        <activity android:name=".ManageMenu" />
+        <activity android:name=".navigation"/>
+        <activity android:name=".OwnerSignUp"/>
+        <activity android:name=".UseCoupon"/>
+        <activity android:name=".ManageMenu"/>
+        <activity android:name=".AccumulateStamp"/>
     </application>
 
 </manifest>
