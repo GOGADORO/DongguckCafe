@@ -1,5 +1,5 @@
 # DongguckCafe
-
+# 대장: 박소영
 ## 팀원
 <ul>
   <li>고가현</li>
