@@ -26,15 +26,15 @@ public class OwnerNavigation extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
             switch (menuItem.getItemId()) {
                 case R.id.navigation_owner_home: {
-                    getSupportFragmentManager().beginTransaction().replace(R.id.nav_layout, fragHome).commitAllowingStateLoss();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.owner_nav, fragHome).commitAllowingStateLoss();
                     return true;
                 }
                 case R.id.navigation_owner_coupon: {
-                    getSupportFragmentManager().beginTransaction().replace(R.id.nav_layout, fragCoupon).commitAllowingStateLoss();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.owner_nav, fragCoupon).commitAllowingStateLoss();
                     return true;
                 }
                 case R.id.navigation_owner_menu: {
-                    getSupportFragmentManager().beginTransaction().replace(R.id.nav_layout, fragMenu).commitAllowingStateLoss();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.owner_nav, fragMenu).commitAllowingStateLoss();
                     return true;
                 }
                 default:
@@ -47,18 +47,16 @@ public class OwnerNavigation extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_accumulatestamp);
+        setContentView(R.layout.activity_owner_navigation);
 
-        bottomNavigationView = findViewById(R.id.bottomNavigationView);
+        bottomNavigationView = findViewById(R.id.owner_bottomnavigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(bottomNavOnNavigationItenSelectedListner);
 
         fragHome = new OwnerHome();
         fragCoupon = new OwnerCoupon();
         fragMenu = new OwnerMenu();
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.nav_layout,fragHome).commitAllowingStateLoss();
-
-
+        getSupportFragmentManager().beginTransaction().replace(R.id.owner_nav,fragHome).commitAllowingStateLoss();
 
     }
 }

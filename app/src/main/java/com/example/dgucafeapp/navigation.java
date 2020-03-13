@@ -13,6 +13,11 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class navigation extends AppCompatActivity {
 
+    private BottomNavigationView bottomNavigationView;
+    private CustomerHome fragHome;
+    private CustomerChart fragChart;
+    private CustomerMenu fragMenu;
+
     private BottomNavigationView.OnNavigationItemSelectedListener bottomNavOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
         @Override
@@ -36,10 +41,6 @@ public class navigation extends AppCompatActivity {
             }
         }
     };
-    private BottomNavigationView bottomNavigationView;
-    private CustomerHome fragHome;
-    private CustomerChart fragChart;
-    private CustomerMenu fragMenu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

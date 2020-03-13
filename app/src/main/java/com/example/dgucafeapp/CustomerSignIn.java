@@ -31,7 +31,6 @@ public class CustomerSignIn extends AppCompatActivity {
         //뷰에서 받아온 데이터
         SignInButton = findViewById(R.id.SignInButton);
         CustomerId = findViewById(R.id.CustomerIdText);
-        String u_id = CustomerId.toString();
         LoginErrorMessage = findViewById(R.id.LoginErrorText);
 
         //실행메소드
@@ -68,11 +67,11 @@ public class CustomerSignIn extends AppCompatActivity {
         });*/
 
         //임시 로그인
-        SignInButton.setOnClickListener(new View.OnClickListener(){
+        SignInButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v){
-                Intent intent = new Intent(CustomerSignIn.this, navigation.class);
-                startActivity(intent);
+            public void onClick(View v) {
+                Intent intent = new Intent(CustomerSignIn.this, navigation.class); //현재에서 이동할 액티비티
+                startActivity(intent); //액티비티 이동
             }
         });
 

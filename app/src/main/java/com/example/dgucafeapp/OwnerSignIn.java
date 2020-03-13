@@ -97,7 +97,7 @@ public class OwnerSignIn extends AppCompatActivity {
         OwnerSignInButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                Intent intent = new Intent(OwnerSignIn.this, navigation.class); //현재에서 이동할 액티비티
+                Intent intent = new Intent(OwnerSignIn.this, OwnerNavigation.class); //현재에서 이동할 액티비티
                 startActivity(intent); //액티비티 이동
             }
         });
