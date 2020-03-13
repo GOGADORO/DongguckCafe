@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccumulateStamp">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="61dp"
+        android:adjustViewBounds="true"
+        android:baseline="100dp"
+        android:src="@drawable/coop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tableLayout" />
+
+    <TableLayout
+
+
+        android:id="@+id/tableLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/customerName"
+                android:layout_span="4"
+                android:textSize="25sp"
+                android:gravity="right"
+                android:hint="고객님" />
+        </TableRow>
+
+        <TableRow android:layout_height="40dp">
+
+            <TextView
+                android:layout_width="123dp"
+                android:layout_height="45dp"
+                android:padding="20dip" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:padding="3dip"
+                android:text="스탬프"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/stampCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="8dip"
+                android:text="0" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="89dp"
+                android:layout_height="38dp"
+                android:padding="20dip" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:padding="3dip"
+                android:text="아메리카노 쿠폰"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/AmericanoCount"
+                android:gravity="right"
+                android:padding="8dip"
+                android:text="0" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="93dp"
+                android:layout_height="47dp"
+                android:padding="20dip" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:padding="3dip"
+                android:text="카페라떼 쿠폰"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/latteCount"
+                android:gravity="right"
+                android:padding="8dip"
+                android:text="0" />
+        </TableRow>
+
+        <TableRow android:gravity="center">
+
+            <TextView
+                android:id="@+id/couponCount"
+                android:layout_span="4"
+                android:textSize="35sp"
+                android:gravity="right"
+                android:hint="0 개" />
+        </TableRow>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dip">
+
+                <TableRow android:gravity="center">
+
+                    <Button
+                        android:id="@+id/Num1"
+                        android:height="50dip"
+                        android:onClick="NumberingCoupon"
+                        android:textSize="20sp"
+                        android:text="1" />
+
+                    <Button
+                        android:id="@+id/Num2"
+                        android:onClick="NumberingCoupon"
+                        android:textSize="20sp"
+
+                        android:text="2" />
+
+                    <Button
+                        android:id="@+id/Num3"
+                        android:onClick="NumberingCoupon"
+                        android:textSize="20sp"
+
+                        android:text="3" />
+                </TableRow>
+
+                <TableRow android:gravity="center">
+
+                    <Button
+                        android:id="@+id/Num4"
+                        android:onClick="NumberingCoupon"
+                        android:textSize="20sp"
+                        android:text="4" />
+
+                    <Button
+                        android:id="@+id/Num5"
+                        android:layout_height="wrap_content"
+                        android:onClick="NumberingCoupon"
+                        android:textSize="20sp"
+                        android:text="5" />
+
+                    <Button
+                        android:id="@+id/Num6"
+                        android:onClick="NumberingCoupon"
+                        android:textSize="20sp"
+                        android:text="6" />
+                </TableRow>
+
+                <TableRow android:gravity="center">
+
+                    <Button
+                        android:id="@+id/Num7"
+                        android:onClick="NumberingCoupon"
+                        android:textSize="20sp"
+                        android:text="7" />
+
+                    <Button
+                        android:id="@+id/Num8"
+                        android:onClick="NumberingCoupon"
+                        android:textSize="20sp"
+                        android:text="8" />
+
+                    <Button
+                        android:id="@+id/Num9"
+                        android:onClick="NumberingCoupon"
+                        android:textSize="20sp"
+                        android:text="9" />
+                </TableRow>
+
+                <TableRow android:gravity="center">
+
+                    <Button
+                        android:id="@+id/reset"
+                        android:textSize="20sp"
+                        android:text="초기화" />
+
+                    <Button
+                        android:id="@+id/Num0"
+                        android:onClick="NumberingCoupon"
+                        android:textSize="20sp"
+                        android:text="0" />
+                    //android:layout_span="2"
+
+
+                    <Button
+                        android:id="@+id/delete"
+                        android:textSize="20sp"
+                        android:text="적립취소" />
+                </TableRow>
+
+            </TableLayout>
+
+            <Button
+
+                android:id="@+id/accumulate"
+                android:layout_width="wrap_content"
+                android:layout_height="234dp"
+                android:textSize="25sp"
+                android:text="적립" />
+
+        </LinearLayout>
+
+    </TableLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/useCopoun"
+            android:layout_width="150dp"
+            android:layout_height="65dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="55dp"
+            android:layout_marginBottom="5dp"
+            android:text="쿠폰 사용"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/managementMenu"
+            android:layout_width="150dp"
+            android:layout_height="65dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="25sp"
+            android:layout_toRightOf="@id/useCopoun"
+            android:text="메뉴 관리" />
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
