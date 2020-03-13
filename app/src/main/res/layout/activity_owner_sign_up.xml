@@ -90,6 +90,7 @@
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="20dp"
+                    android:textColor="@color/colorAccent"
                     android:text="TextView" />
 
                 <TextView
@@ -112,8 +113,7 @@
                     android:background="@drawable/textview_border_layout"
                     android:ems="10"
                     android:hint="비밀번호1를 입력해주세요"
-                    android:padding="10dp"
-                    android:inputType="textPassword"/>
+                    android:padding="10dp"/>
 
                 <EditText
                     android:id="@+id/PW1CheckText"
@@ -136,6 +136,7 @@
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="20dp"
+                    android:textColor="@color/colorAccent"
                     android:text="TextView" />
 
                 <EditText
@@ -148,8 +149,7 @@
                     android:background="@drawable/textview_border_layout"
                     android:ems="10"
                     android:hint="비밀번호2를 입력해주세요"
-                    android:padding="10dp"
-                    android:inputType="textPassword"/>
+                    android:padding="10dp"/>
 
                 <EditText
                     android:id="@+id/PW2CheckText"
@@ -172,6 +172,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="20dp"
                     android:layout_marginBottom="30dp"
+                    android:textColor="@color/colorAccent"
                     android:text="TextView" />
 
             </LinearLayout>

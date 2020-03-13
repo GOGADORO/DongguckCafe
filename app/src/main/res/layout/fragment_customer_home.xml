@@ -61,7 +61,6 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/Stamp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="25dp"
@@ -109,72 +108,37 @@
                 android:paddingBottom="10dp"
                 android:layout_gravity="center">
 
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:background="@drawable/stamp_rounding"
-                    android:backgroundTint="@color/lightGrayColor"/>
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginRight="10dp"
-                    android:background="@drawable/stamp_rounding"
-                    android:backgroundTint="@color/lightGrayColor"/>
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginRight="10dp"
-                    android:background="@drawable/stamp_rounding"
-                    android:backgroundTint="@color/lightGrayColor"/>
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginRight="10dp"
-                    android:background="@drawable/stamp_rounding"
-                    android:backgroundTint="@color/lightGrayColor"/>
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginRight="10dp"
-                    android:background="@drawable/stamp_rounding"
-                    android:backgroundTint="@color/lightGrayColor"/>
-            </TableRow>
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:paddingTop="5dp"
-                    android:paddingBottom="10dp"
-                    android:layout_gravity="center">
-
                     <ImageView
-                        android:layout_width="50dp"
+                        android:id="@+id/stamp1"
+                        android:layout_width="wrap_content"
                         android:layout_height="50dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
                         android:background="@drawable/stamp_rounding"
-                        android:backgroundTint="@color/lightGrayColor"/>
+                        android:backgroundTint="@color/lightGrayColor" />
                     <ImageView
+                        android:id="@+id/stamp2"
                         android:layout_width="50dp"
                         android:layout_height="match_parent"
                         android:layout_marginRight="10dp"
                         android:background="@drawable/stamp_rounding"
                         android:backgroundTint="@color/lightGrayColor"/>
                     <ImageView
+                        android:id="@+id/stamp3"
                         android:layout_width="50dp"
                         android:layout_height="match_parent"
                         android:layout_marginRight="10dp"
                         android:background="@drawable/stamp_rounding"
                         android:backgroundTint="@color/lightGrayColor"/>
                     <ImageView
+                        android:id="@+id/stamp4"
                         android:layout_width="50dp"
                         android:layout_height="match_parent"
                         android:layout_marginRight="10dp"
                         android:background="@drawable/stamp_rounding"
                         android:backgroundTint="@color/lightGrayColor"/>
                     <ImageView
+                        android:id="@+id/stamp5"
                         android:layout_width="50dp"
                         android:layout_height="match_parent"
                         android:layout_marginRight="10dp"
@@ -190,6 +154,7 @@
                     android:layout_gravity="center">
 
                     <ImageView
+                        android:id="@+id/stamp6"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:layout_marginLeft="10dp"
@@ -197,24 +162,73 @@
                         android:background="@drawable/stamp_rounding"
                         android:backgroundTint="@color/lightGrayColor"/>
                     <ImageView
+                        android:id="@+id/stamp7"
                         android:layout_width="50dp"
                         android:layout_height="match_parent"
                         android:layout_marginRight="10dp"
                         android:background="@drawable/stamp_rounding"
                         android:backgroundTint="@color/lightGrayColor"/>
                     <ImageView
+                        android:id="@+id/stamp8"
                         android:layout_width="50dp"
                         android:layout_height="match_parent"
                         android:layout_marginRight="10dp"
                         android:background="@drawable/stamp_rounding"
                         android:backgroundTint="@color/lightGrayColor"/>
                     <ImageView
+                        android:id="@+id/stamp9"
                         android:layout_width="50dp"
                         android:layout_height="match_parent"
                         android:layout_marginRight="10dp"
                         android:background="@drawable/stamp_rounding"
                         android:backgroundTint="@color/lightGrayColor"/>
                     <ImageView
+                        android:id="@+id/stamp10"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/stamp_rounding"
+                        android:backgroundTint="@color/lightGrayColor"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="10dp"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/stamp11"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/stamp_rounding"
+                        android:backgroundTint="@color/lightGrayColor"/>
+                    <ImageView
+                        android:id="@+id/stamp12"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/stamp_rounding"
+                        android:backgroundTint="@color/lightGrayColor"/>
+                    <ImageView
+                        android:id="@+id/stamp13"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/stamp_rounding"
+                        android:backgroundTint="@color/lightGrayColor"/>
+                    <ImageView
+                        android:id="@+id/stamp14"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/stamp_rounding"
+                        android:backgroundTint="@color/lightGrayColor"/>
+                    <ImageView
+                        android:id="@+id/stamp15"
                         android:layout_width="50dp"
                         android:layout_height="match_parent"
                         android:layout_marginRight="10dp"
