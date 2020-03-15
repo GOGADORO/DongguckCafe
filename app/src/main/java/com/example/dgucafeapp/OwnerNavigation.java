@@ -13,15 +13,12 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import org.w3c.dom.Text;
 public class OwnerNavigation extends AppCompatActivity {
 
-
     private BottomNavigationView bottomNavigationView;
-    private FragmentManager fm;
-    private FragmentTransaction ft;
     private OwnerHome fragHome;
     private OwnerCoupon fragCoupon;
     private OwnerMenu fragMenu;
 
-    private BottomNavigationView.OnNavigationItemSelectedListener bottomNavOnNavigationItenSelectedListner =new BottomNavigationView.OnNavigationItemSelectedListener() {
+    private BottomNavigationView.OnNavigationItemSelectedListener bottomNavOnNavigationItenSelectedListner = new BottomNavigationView.OnNavigationItemSelectedListener() {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
             switch (menuItem.getItemId()) {
@@ -56,7 +53,7 @@ public class OwnerNavigation extends AppCompatActivity {
         fragCoupon = new OwnerCoupon();
         fragMenu = new OwnerMenu();
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.owner_nav,fragHome).commitAllowingStateLoss();
+        getSupportFragmentManager().beginTransaction().replace(R.id.owner_nav, fragHome).commitAllowingStateLoss();
 
     }
 }

@@ -35,10 +35,6 @@ public class OwnerSignIn extends AppCompatActivity {
         OwnerPwd2 = findViewById(R.id.OwnerPW2Text);
         LoginErrorMessage = findViewById(R.id.LoginErrorText);
 
-        String u_id = OwnerId.toString();
-        String pwd1 = OwnerPwd1.toString();
-        String pwd2 = OwnerPwd2.toString();
-
         //실행메소드
         ButtonAction();
         OwnerLogin();
@@ -71,8 +67,8 @@ public class OwnerSignIn extends AppCompatActivity {
         /*OwnerSignInButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                if checkPhone(u_id){
-                    if checkPassword(u_id, pwd1, pwd2){
+                if (checkPhone(OwnerId.getText().toString())){
+                    if (checkPassword(OwnerId.getText().toString(), OwnerPwd1.getText().toString(), OwnerPwd2.getText().toString())){
                         Intent intent = new Intent(OwnerSignIn.this, navigation.class); //현재에서 이동할 액티비티
                         startActivity(intent); //액티비티 이동
                     }

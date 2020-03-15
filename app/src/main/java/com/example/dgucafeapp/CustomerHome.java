@@ -13,25 +13,42 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 public class CustomerHome extends Fragment {
-    ViewGroup viewGroup;
-    private LinearLayout CouponView;
-    private Button CouponButton;
+    View v;
+    private TextView CustomerId, StampNum, Americano, Latte;
+    private ImageView Stamp1, Stamp2, Stamp3, Stamp4, Stamp5,
+                        Stamp6, Stamp7, Stamp8, Stamp9, Stamp10,
+                        Stamp11, Stamp12, Stamp13, Stamp14, Stamp15;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState){
-        viewGroup = (ViewGroup) inflater.inflate(R.layout.fragment_customer_home,container,false);
+        v = inflater.inflate(R.layout.fragment_customer_home,container,false);
 
+        //뷰에서 받아온 데이터
+        CustomerId = v.findViewById(R.id.CustomerId);
+        StampNum = v.findViewById(R.id.StampNum);
+        Americano = v.findViewById(R.id.Americano);
+        Latte = v.findViewById(R.id.Cafelatte);
 
-        return viewGroup;
+        //CustomerId.setText(getCustomerId());
+
+        return v;
     }
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
+    public void setStampView(){
+        for(int i=0; i<6; i++){
+            String stampView = "R.id.Stamp"+String.valueOf(i);
+            int stampId = getResources().getIdentifier(stampView, "id","com.example.dgucafeapp");
+            ImageView Stamp = v.findViewById(stampId);
+            Stamp.setImageResource(R.drawable.coop);
+        }
     }
+
+
+
 }

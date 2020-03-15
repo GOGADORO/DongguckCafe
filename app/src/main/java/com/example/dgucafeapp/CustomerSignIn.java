@@ -30,16 +30,18 @@ public class CustomerSignIn extends AppCompatActivity {
 
         //뷰에서 받아온 데이터
         SignInButton = findViewById(R.id.SignInButton);
+        SignUpButton = findViewById(R.id.SignUpButton);
         CustomerId = findViewById(R.id.CustomerIdText);
         LoginErrorMessage = findViewById(R.id.LoginErrorText);
 
         //실행메소드
-        ButtonAction();
+        MoveButton();
         CustomerSignIn();
         CustomerSignUp();
     }
 
-    public void ButtonAction(){
+    //액티비티 이동 버튼액션 함수
+    public void MoveButton(){
         OwnerButton = findViewById(R.id.OwnerButton);
         OwnerButton.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -50,13 +52,14 @@ public class CustomerSignIn extends AppCompatActivity {
         });
     }
 
+    //점주 로그인 함수
     public void CustomerSignIn(){
         /*SignInButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
                 if checkPhone(u_id){
                     Intent intent = new Intent(CustomerSignIn.this, navigation.class);
-                    startActivity(intent); //현재는 로그인 확인 절차 없이 바로 이동
+                    startActivity(intent);
                 }
                 else{
                     LoginErrorMessage.setText("로그인 오류입니다.\n전화번호(id)를 확인하십시오.");
@@ -78,19 +81,23 @@ public class CustomerSignIn extends AppCompatActivity {
     }
 
     public void CustomerSignUp(){
-        SignUpButton = findViewById(R.id.SignUpButton);
+        /*SignUpButton = findViewById(R.id.SignUpButton);
         SignUpButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                /*if isPhoneDup(u_id) {
+                if (isPhoneDup(CustomerId.getText().toString().equals(null))) {
                     LoginErrorMessage.setText("이미 존재하는 계정입니다.\n로그인 버튼을 눌러 로그인하십시오.");
                     CustomerId.setBackgroundResource(R.drawable.textview_border_error);
                     CustomerId.setHintTextColor(getApplicationContext().getResources().getColor(R.color.colorAccent));
-                } else{
-                    LoginErrorMessage.setText("계정이 생성되었습니다.\n로그인 하십시오.")
-                }*/
+                }
+                else if(CustomerId.getText().toString().equals(null)){
+                    LoginErrorMessage.setText("회원가입 할 전화번호(id)를 입력한 후에\n회원가입 버튼을 누르십시오.");
+                    CustomerId.setBackgroundResource(R.drawable.textview_border_error);
+                    CustomerId.setHintTextColor(getApplicationContext().getResources().getColor(R.color.colorAccent));
+                } else {
+                    Toast.makeText(CustomerSignIn.this, "계정이 생성되었습니다. 로그인 하십시오.",Toast.LENGTH_SHORT).show();
+                }
             }
-        });
-
+        });*/
     }
 }
